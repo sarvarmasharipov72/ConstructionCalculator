@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Acer/.gradle/caches/transforms-3/2a98f95e17d1d01cc5e833ac2589e0f9/transformed/appcompat-1.4.1/res/layout/support_simple_spinner_dropdown_item.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/drawable-v24/edittext_background.xml" value="0.1985" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/drawable/dialog_background.xml" value="0.1985" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1835" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/drawable/item_background.xml" value="0.1985" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/add_material_to_job.xml" value="0.2734375" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/fragment_job_category.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/fragment_job_read.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/fragment_one.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/fragment_three.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/fragment_two.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/home_fragment.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/item_jobs.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/job_insert_fragment.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/job_layout.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/jobs_fragment.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/material_fragment.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/material_insert_fragment.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/material_layout.xml" value="0.176" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/material_read_fragment.xml" value="0.2" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/project_insert_fragment.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/project_item.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/project_read_fragment.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/ConstructionCalculator/app/src/main/res/layout/projects_fragment.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/Acer/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.27447916666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

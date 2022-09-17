@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_background"
+    android:padding="10dp"
+    tools:context=".ui.jobs.calculator.two.TwoFragment">
+
+    <EditText
+        android:id="@+id/twoParamOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/twoParamTwo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/twoParamTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/receptionTwo"
+        app:layout_constraintTop_toBottomOf="@id/twoParamOne" />
+
+    <TextView
+        android:id="@+id/receptionTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintBottom_toTopOf="@id/calcTwoJobBtn"
+        app:layout_constraintTop_toBottomOf="@id/twoParamTwo" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/calcTwoJobBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="@color/button_color"
+        android:text="@string/hisoblash"
+        android:textAllCaps="false"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/receptionTwo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

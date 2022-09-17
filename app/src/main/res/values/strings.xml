@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">ConstructionCalculator</string>
+    <string name="loyhalar">Loyhalar</string>
+    <string name="materialar">Materialar</string>
+    <string name="ishlar">Ishlar</string>
+    <string name="nomi">Nomi</string>
+    <string name="measurement">O\'lchov birligi</string>
+    <string name="price">Baxosi</string>
+    <string name="save">Saqlash</string>
+    <string name="edit">O\'zgartirish</string>
+    <string name="delete">O\'chirish</string>
+    <string name="name">Name</string>
+    <string name="_1_o_lchamli_ishlar">1 o\'lchamli ishlar</string>
+    <string name="_2_o_lchamli_ishlar">2 o\'lchamli ishlar</string>
+    <string name="nechta_o_lchamli_ekanlikini_tanlang">nechta o\'lchamli ekanlikini tanlang</string>
+    <string name="material_qo_shish">Material Qo\'shish</string>
+    <string name="_0_100">0-100</string>
+    <string name="saqlash">Saqlash</string>
+    <string name="hisoblash">Hisoblash</string>
+    <string name="ish_qo_shish">Ish qo\'shish</string>
+    <string name="ish_o_chirish">Ish o\'chirish</string>
+</resources>

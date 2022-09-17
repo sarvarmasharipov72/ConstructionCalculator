@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.constructioncalculator.ui.home.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_projectFragment"
+            app:destination="@id/projectFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_jobsFragment"
+            app:destination="@id/jobsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_materialFragment"
+            app:destination="@id/materialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/materialFragment"
+        android:name="com.example.constructioncalculator.ui.materials.MaterialFragment"
+        android:label="material_fragment"
+        tools:layout="@layout/material_fragment" >
+        <action
+            android:id="@+id/action_materialFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_materialFragment_to_materialReadFragment"
+            app:destination="@id/materialReadFragment" />
+        <action
+            android:id="@+id/action_materialFragment_to_insertDialogFragment"
+            app:destination="@id/insertDialogFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jobsFragment"
+        android:name="com.example.constructioncalculator.ui.jobs.JobsFragment"
+        android:label="jobs_fragment"
+        tools:layout="@layout/jobs_fragment" >
+        <action
+            android:id="@+id/action_jobsFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_jobsFragment_to_jobReadFragment"
+            app:destination="@id/jobReadFragment" />
+        <action
+            android:id="@+id/action_jobsFragment_to_insertJobFragment"
+            app:destination="@id/insertJobFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/projectFragment"
+        android:name="com.example.constructioncalculator.ui.projects.ProjectFragment"
+        android:label="projects_fragment"
+        tools:layout="@layout/projects_fragment" >
+        <action
+            android:id="@+id/action_projectFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_projectFragment_to_projectReadFragment"
+            app:destination="@id/projectReadFragment" />
+        <action
+            android:id="@+id/action_projectFragment_to_projectInsertFragment"
+            app:destination="@id/projectInsertFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/projectAddToJob"
+        android:name="com.example.constructioncalculator.ui.projects.insert.add.AddJobToProjectFragment"
+        android:label="ProjectAddToJob"
+        tools:layout="@layout/add_material_to_job">
+        <action
+            android:id="@+id/action_projectAddToJob_to_projectInsertFragment"
+            app:destination="@id/projectInsertFragment" />
+    </dialog>
+    <dialog
+        android:id="@+id/projectReadFragment"
+        android:name="com.example.constructioncalculator.ui.projects.read.ProjectReadFragment"
+        android:label="project_read_fragment"
+        tools:layout="@layout/project_read_fragment" >
+        <action
+            android:id="@+id/action_projectReadDialog_to_projectFragment"
+            app:destination="@id/projectFragment" />
+        <argument
+            android:name="project"
+            app:argType="com.example.constructioncalculator.model.Project" />
+    </dialog>
+    <dialog
+        android:id="@+id/projectInsertFragment"
+        android:name="com.example.constructioncalculator.ui.projects.insert.ProjectInsertFragment"
+        android:label="project_insert_fragment"
+        tools:layout="@layout/project_insert_fragment" >
+        <action
+            android:id="@+id/action_projectInsertFragment_to_projectAddToJob"
+            app:destination="@id/projectAddToJob" />
+        <action
+            android:id="@+id/action_projectInsertFragment_to_projectFragment"
+            app:destination="@id/projectFragment" />
+    </dialog>
+    <fragment
+        android:id="@+id/jobReadFragment"
+        android:name="com.example.constructioncalculator.ui.jobs.read.JobReadFragment"
+        android:label="fragment_job_read"
+        tools:layout="@layout/fragment_job_read" >
+        <action
+            android:id="@+id/action_jobReadFragment_to_jobsFragment"
+            app:destination="@id/jobsFragment" />
+        <argument
+            android:name="job"
+            app:argType="com.example.constructioncalculator.model.Jobs" />
+        <action
+            android:id="@+id/action_jobReadFragment_to_jobUpdateFragment"
+            app:destination="@id/jobUpdateFragment" />
+        <action
+            android:id="@+id/action_jobReadFragment_to_oneFragment"
+            app:destination="@id/oneFragment" />
+        <action
+            android:id="@+id/action_jobReadFragment_to_twoFragment"
+            app:destination="@id/twoFragment" />
+        <action
+            android:id="@+id/action_jobReadFragment_to_threeFragment"
+            app:destination="@id/threeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jobUpdateFragment"
+        android:name="com.example.constructioncalculator.ui.jobs.update.JobUpdateFragment"
+        android:label="JobUpdateFragment"
+        tools:layout="@layout/job_layout">
+        <action
+            android:id="@+id/action_jobUpdateFragment_to_jobReadFragment"
+            app:destination="@id/jobReadFragment" />
+        <argument
+            android:name="job"
+            app:argType="com.example.constructioncalculator.model.Jobs" />
+    </fragment>
+    <fragment
+        android:id="@+id/insertJobFragment"
+        android:name="com.example.constructioncalculator.ui.jobs.insert.InsertJobFragment"
+        android:label="InsertJobFragment"
+        tools:layout="@layout/job_layout">
+        <action
+            android:id="@+id/action_insertJobFragment_to_jobsFragment"
+            app:destination="@id/jobsFragment" />
+        <action
+            android:id="@+id/action_insertJobFragment_to_addMaterialFragment"
+            app:destination="@id/addMaterialFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/oneFragment"
+        android:name="com.example.constructioncalculator.ui.jobs.calculator.one.OneFragment"
+        android:label="fragment_one"
+        tools:layout="@layout/fragment_one" >
+        <argument
+            android:name="job"
+            app:argType="com.example.constructioncalculator.model.Jobs" />
+    </dialog>
+    <fragment
+        android:id="@+id/twoFragment"
+        android:name="com.example.constructioncalculator.ui.jobs.calculator.two.TwoFragment"
+        android:label="fragment_two"
+        tools:layout="@layout/fragment_two" >
+        <argument
+            android:name="job"
+            app:argType="com.example.constructioncalculator.model.Jobs" />
+    </fragment>
+    <fragment
+        android:id="@+id/threeFragment"
+        android:name="com.example.constructioncalculator.ui.jobs.calculator.three.ThreeFragment"
+        android:label="fragment_three"
+        tools:layout="@layout/fragment_three" >
+        <argument
+            android:name="job"
+            app:argType="com.example.constructioncalculator.model.Jobs" />
+    </fragment>
+    <fragment
+        android:id="@+id/materialReadFragment"
+        android:name="com.example.constructioncalculator.ui.materials.read.MaterialReadFragment"
+        android:label="material_read_fragment"
+        tools:layout="@layout/material_read_fragment" >
+        <action
+            android:id="@+id/action_materialReadFragment_to_materialUpdateFragment"
+            app:destination="@id/materialUpdateFragment" />
+        <argument
+            android:name="material"
+            app:argType="com.example.constructioncalculator.model.Material" />
+        <action
+            android:id="@+id/action_materialReadFragment_to_materialFragment"
+            app:destination="@id/materialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/materialUpdateFragment"
+        android:name="com.example.constructioncalculator.ui.materials.update.MaterialUpdateFragment"
+        android:label="MaterialUpdateFragment"
+        tools:layout="@layout/material_layout">
+        <action
+            android:id="@+id/action_materialUpdateFragment_to_materialReadFragment"
+            app:destination="@id/materialReadFragment" />
+        <argument
+            android:name="material"
+            app:argType="com.example.constructioncalculator.model.Material" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMaterialFragment"
+        android:name="com.example.constructioncalculator.ui.jobs.insert.add.AddMaterialFragment"
+        android:label="AddMaterialFragment"
+        tools:layout="@layout/add_material_to_job">
+        <action
+            android:id="@+id/action_addMaterialFragment_to_insertJobFragment"
+            app:destination="@id/insertJobFragment" />
+        <argument
+            android:name="precent"
+            app:argType="integer" />
+    </fragment>
+    <dialog
+        android:id="@+id/insertDialogFragment"
+        android:name="com.example.constructioncalculator.ui.materials.insert.InsertMaterialFragment"
+        android:label="InsertDialogFragment"
+        tools:layout="@layout/material_layout"
+        >
+        <action
+            android:id="@+id/action_insertDialogFragment_to_materialFragment"
+            app:destination="@id/materialFragment" />
+    </dialog>
+</navigation>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/dialog_background"
+    android:padding="10dp"
+    tools:context=".ui.jobs.calculator.three.ThreeFragment">
+
+    <EditText
+        android:id="@+id/threeParamOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/threeParamTwo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/threeParamTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/threeParamThree"
+        app:layout_constraintTop_toBottomOf="@id/threeParamOne" />
+
+    <EditText
+        android:id="@+id/threeParamThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        android:background="@drawable/edittext_background"
+        android:inputType="number"
+        android:paddingStart="10dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/receptionThree"
+        app:layout_constraintTop_toBottomOf="@id/threeParamTwo" />
+
+    <TextView
+        android:id="@+id/receptionThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintBottom_toTopOf="@id/calcThreeJobBtn"
+        app:layout_constraintTop_toBottomOf="@id/threeParamThree" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/calcThreeJobBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginVertical="10dp"
+        android:backgroundTint="@color/button_color"
+        android:text="@string/hisoblash"
+        android:textAllCaps="false"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/receptionThree" />
+</androidx.constraintlayout.widget.ConstraintLayout>
